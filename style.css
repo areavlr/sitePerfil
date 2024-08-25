@@ -1,0 +1,327 @@
+*{
+    overflow-z: hidden;
+}
+body {
+    background: linear-gradient(to bottom,#000000, #2f0a36);
+    min-height: 100vh;
+}
+
+p {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#insta, #twitch, #twitter, #git {
+    text-decoration: none;
+}
+
+#insta{ 
+    color: rgb(245, 183, 221);
+}
+
+#twitch{
+    color: purple; 
+}
+
+#twitter{ 
+    color: rgb(0, 140, 255); 
+}
+
+#git{
+    color: #fff; 
+}
+
+#insta:hover, #twitch:hover, #twitter:hover, #git:hover{
+    background-color: rgba(22, 20, 24, 0.555);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+.nickRiot, .nickDisc {
+    color: #fff;
+    font-size: 20px;
+}
+
+.disc-container, .riot-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.disc-container:hover, .riot-container:hover {
+    background-color: rgba(22, 20, 24, 0.555);
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.container-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.link-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: cover; 
+}
+
+.link-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.playlist {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(21, 22, 22);
+}
+
+.copy {
+    color: #fff;
+}
+
+.textoFoter {
+    color: #fff;
+}
+
+.nome {
+    color: rgb(136, 68, 214);
+}
+
+/* Ajuste para desktop */
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    margin-left: -230px; /* Ajustar conforme necessário para desktop */
+}
+
+#ftPerfil {
+    max-width: 190px;
+    border-radius: 150px;
+    margin-top: 1.5em;
+    border: 4px solid black;
+}
+
+section > h1 {
+    margin-bottom: 10px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+#bio {
+    margin-top: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: "Titillium Web", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.icons {
+    font-size: 32px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #239114; 
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#alertMessage {
+    margin: 0;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Adicionando a nova classe container */
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Ajuste a opacidade conforme necessário (0.3 é 30% de opacidade) */
+    padding: 20px; /* Adiciona algum preenchimento interno */
+    border-radius: 40px; /* Adiciona bordas arredondadas */
+    margin: 20px auto; /* Adiciona margem automática para centralizar */
+    max-width: 1000px; /* Define uma largura máxima para a caixa */
+    margin-bottom: 75px;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .perfil {
+        margin-left: 0; /* Reverte a margem para dispositivos móveis */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #ftPerfil {
+        max-width: 100px;
+        margin-top: 0;
+    }
+
+    section > h1 {
+        margin-top: 10px;
+        font-size: large;
+    }
+
+    #bio {
+        font-size: medium;
+    }
+
+    .link-box {
+        width: 150px;
+        padding: 5px;
+    }
+
+    .link-box img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .container-links {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .playlist iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .icons {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil {
+        padding: 10px;
+    }
+
+    #ftPerfil {
+        max-width: 80px;
+    }
+
+    section > h1 {
+        margin-top: 5px;
+        font-size: medium;
+    }
+
+    #bio {
+        font-size: small;
+    }
+
+    .link-box {
+        width: 120px;
+    }
+
+    .link-box img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .icons {
+        font-size: 20px;
+    }
+
+    .playlist iframe {
+        height: 200px;
+    }
+}
