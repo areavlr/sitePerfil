@@ -1,6 +1,4 @@
-*{
-    overflow-z: hidden;
-}
+
 body {
     background: linear-gradient(to bottom,#000000, #2f0a36);
     min-height: 100vh;
@@ -133,14 +131,13 @@ h1 {
     color: rgb(136, 68, 214);
 }
 
-/* Ajuste para desktop */
 .perfil {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-direction: row;
-    margin-left: -230px; /* Ajustar conforme necessário para desktop */
+    margin-left: -230px; 
 }
 
 #ftPerfil {
@@ -228,21 +225,18 @@ h2{
     font-style: normal;
 }
 
-/* Adicionando a nova classe container */
 .container {
-    background-color: rgba(255, 255, 255, 0.1); /* Ajuste a opacidade conforme necessário (0.3 é 30% de opacidade) */
-    padding: 20px; /* Adiciona algum preenchimento interno */
-    border-radius: 40px; /* Adiciona bordas arredondadas */
-    margin: 20px auto; /* Adiciona margem automática para centralizar */
-    max-width: 1000px; /* Define uma largura máxima para a caixa */
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px; 
+    border-radius: 40px; 
+    margin: 20px auto;
+    max-width: 1000px; 
     margin-bottom: 75px;
 }
 
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
+@media (max-width: 931px) {
     .perfil {
-        margin-left: 0; /* Reverte a margem para dispositivos móveis */
+        margin-left: 0;
         flex-direction: column;
         align-items: center;
         text-align: center;
